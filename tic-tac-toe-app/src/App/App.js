@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-import { GameProvider } from './Context/GameContext';
+import { GameProvider } from '../Context/GameContext';
 import './App.css';
-import Home from './Pages/Home/Home';
-import GameSession from './Pages/InputGame/GameSession';
-import GamePlay from './Pages/Game/GamePlay';
+import Home from '../Pages/Home/Home';
+import GameSession from '../Pages/InputGame/GameSession';
+import GamePlay from '../Pages/Game/GamePlay';
 
 
 function App() {

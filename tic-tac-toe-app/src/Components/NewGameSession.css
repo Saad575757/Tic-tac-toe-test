@@ -1,48 +1,77 @@
 .new-game-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.new-game-form {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  max-width: 90%; /* Responsive adjustment */
+}
+
+.new-game-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-game-form input {
+  width: 100%;
+  padding: 8px 0px 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-game-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%; /* Full-width button */
+}
+
+.new-game-form button:hover {
+  background-color: #0056b3;
+}
+.new-game-title {
+  font-size: 32px; /* Default font size for smaller screens */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+  /* Adjust font size for screens with a minimum width of 576px */
+  .new-game-title {
+      font-size: 40px;
   }
-  
-  .new-game-form {
-    
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    width: 300px;
+}
+
+@media (min-width: 768px) {
+  /* Adjust font size for screens with a minimum width of 768px */
+  .new-game-title {
+      font-size: 50px;
   }
-  
-  .new-game-form label {
-    display: block;
-    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  /* Adjust font size for screens with a minimum width of 992px */
+  .new-game-title {
+      font-size: 60px;
   }
-  
-  .new-game-form input {
-    width: 100%;
-    padding: 8px 0px 8px 0px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  /* Adjust font size for screens with a minimum width of 1200px */
+  .new-game-title {
+      font-size: 70px;
   }
-  
-  .new-game-form button {
-    margin-top: 20px;
-    padding: 10px 20px ;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .new-game-form button:hover {
-    background-color: #0056b3;
-  }
-  .new-game-title{
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+}
