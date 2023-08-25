@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useGameContext } from './GameContext';
+import { useGameContext } from '../Context/GameContext';
 import './NewGameSession.css';
 
 function NewGameSession() {

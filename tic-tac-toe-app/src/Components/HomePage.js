@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useGameContext } from './GameContext';
+import { useGameContext } from '../Context/GameContext';
 import './HomePage.css';
 
 function HomePage() {
